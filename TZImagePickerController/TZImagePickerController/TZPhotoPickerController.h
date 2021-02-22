@@ -14,6 +14,8 @@
 @property (nonatomic, assign) BOOL isFirstAppear;
 @property (nonatomic, assign) NSInteger columnNumber;
 @property (nonatomic, strong) TZAlbumModel *model;
+#warning ------------------- 是否可以编辑
+@property (nonatomic, assign) BOOL allowEdit;
 @end
 
 

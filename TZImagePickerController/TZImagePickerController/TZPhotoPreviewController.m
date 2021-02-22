@@ -9,10 +9,11 @@
 #import "TZPhotoPreviewController.h"
 #import "TZPhotoPreviewCell.h"
 #import "TZAssetModel.h"
-#import "UIView+TZLayout.h"
+#import "UIView+Layout.h"
 #import "TZImagePickerController.h"
 #import "TZImageManager.h"
 #import "TZImageCropManager.h"
+#import "SLEditImageController.h"
 
 @interface TZPhotoPreviewController ()<UICollectionViewDataSource,UICollectionViewDelegate,UIScrollViewDelegate> {
     UICollectionView *_collectionView;
@@ -31,6 +32,7 @@
     UILabel *_numberLabel;
     UIButton *_originalPhotoButton;
     UILabel *_originalPhotoLabel;
+    UIButton *_editButton;
     
     CGFloat _offsetItemCount;
     
@@ -42,7 +44,6 @@
 
 @property (nonatomic, assign) double progress;
 @property (strong, nonatomic) UIAlertController *alertView;
-@property (nonatomic, strong) UIView *iCloudErrorView;
 @end
 
 @implementation TZPhotoPreviewController
@@ -164,6 +165,13 @@
     [_doneButton setTitle:_tzImagePickerVc.doneBtnTitleStr forState:UIControlStateNormal];
     [_doneButton setTitleColor:_tzImagePickerVc.oKButtonTitleColorNormal forState:UIControlStateNormal];
     
+    _editButton = [UIButton buttonWithType:UIButtonTypeCustom];
+    _editButton.titleLabel.font = [UIFont systemFontOfSize:14];
+    [_editButton addTarget:self action:@selector(editButtonClick) forControlEvents:UIControlEventTouchUpInside];
+    [_editButton setTitle:@"编辑" forState:UIControlStateNormal];
+    _editButton.hidden = !self.allowEdit;
+    [_editButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    
     _numberImageView = [[UIImageView alloc] initWithImage:_tzImagePickerVc.photoNumberIconImage];
     _numberImageView.backgroundColor = [UIColor clearColor];
     _numberImageView.clipsToBounds = YES;
@@ -184,6 +192,9 @@
     [_toolBar addSubview:_originalPhotoButton];
     [_toolBar addSubview:_numberImageView];
     [_toolBar addSubview:_numberLabel];
+    if (self.allowEdit) {
+        [_toolBar addSubview:_editButton];
+    }
     [self.view addSubview:_toolBar];
     
     if (_tzImagePickerVc.photoPreviewPageUIConfigBlock) {
@@ -207,11 +218,6 @@
     [_collectionView registerClass:[TZPhotoPreviewCell class] forCellWithReuseIdentifier:@"TZPhotoPreviewCell"];
     [_collectionView registerClass:[TZVideoPreviewCell class] forCellWithReuseIdentifier:@"TZVideoPreviewCell"];
     [_collectionView registerClass:[TZGifPreviewCell class] forCellWithReuseIdentifier:@"TZGifPreviewCell"];
-    
-    TZImagePickerController *_tzImagePickerVc = (TZImagePickerController *)self.navigationController;
-    if (_tzImagePickerVc.scaleAspectFillCrop && _tzImagePickerVc.allowCrop) {
-        _collectionView.scrollEnabled = NO;
-    }
 }
 
 - (void)configCropView {
@@ -275,7 +281,7 @@
         [_collectionView reloadData];
     }
     
-    CGFloat toolBarHeight = 44 + [TZCommonTools tz_safeAreaInsets].bottom;
+    CGFloat toolBarHeight = [TZCommonTools tz_isIPhoneX] ? 44 + (83 - 49) : 44;
     CGFloat toolBarTop = self.view.tz_height - toolBarHeight;
     _toolBar.frame = CGRectMake(0, toolBarTop, self.view.tz_width, toolBarHeight);
     if (_tzImagePickerVc.allowPickingOriginalPhoto) {
@@ -287,6 +293,9 @@
     _doneButton.frame = CGRectMake(self.view.tz_width - _doneButton.tz_width - 12, 0, _doneButton.tz_width, 44);
     _numberImageView.frame = CGRectMake(_doneButton.tz_left - 24 - 5, 10, 24, 24);
     _numberLabel.frame = _numberImageView.frame;
+    
+    [_editButton sizeToFit];
+    _editButton.frame = CGRectMake(self.view.tz_width/2-22, 0, 44, 44);
     
     [self configCropView];
     
@@ -314,9 +323,6 @@
             return;
             // 2. if not over the maxImagesCount / 如果没有超过最大个数限制
         } else {
-            if ([[TZImageManager manager] isAssetCannotBeSelected:model.asset]) {
-                return;
-            }
             [_tzImagePickerVc addSelectedModel:model];
             if (self.photos) {
                 [_tzImagePickerVc.selectedAssets addObject:_assetsTemp[self.currentIndex]];
@@ -391,23 +397,22 @@
     }
     
     // 如果没有选中过照片 点击确定时选中当前预览的照片
-    if (_tzImagePickerVc.selectedModels.count == 0 && _tzImagePickerVc.minImagesCount <= 0 && _tzImagePickerVc.autoSelectCurrentWhenDone) {
+    if (_tzImagePickerVc.selectedModels.count == 0 && _tzImagePickerVc.minImagesCount <= 0) {
         TZAssetModel *model = _models[self.currentIndex];
-        if ([[TZImageManager manager] isAssetCannotBeSelected:model.asset]) {
-            return;
-        }
-        [self select:_selectButton];
+        [_tzImagePickerVc addSelectedModel:model];
     }
     NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.currentIndex inSection:0];
     TZPhotoPreviewCell *cell = (TZPhotoPreviewCell *)[_collectionView cellForItemAtIndexPath:indexPath];
     if (_tzImagePickerVc.allowCrop && [cell isKindOfClass:[TZPhotoPreviewCell class]]) { // 裁剪状态
         _doneButton.enabled = NO;
+        _editButton.enabled = NO;
         [_tzImagePickerVc showProgressHUD];
         UIImage *cropedImage = [TZImageCropManager cropImageView:cell.previewView.imageView toRect:_tzImagePickerVc.cropRect zoomScale:cell.previewView.scrollView.zoomScale containerView:self.view];
         if (_tzImagePickerVc.needCircleCrop) {
             cropedImage = [TZImageCropManager circularClipImage:cropedImage];
         }
         _doneButton.enabled = YES;
+        _editButton.enabled = YES;
         [_tzImagePickerVc hideProgressHUD];
         if (self.doneButtonClickBlockCropMode) {
             TZAssetModel *model = _models[self.currentIndex];
@@ -421,11 +426,30 @@
     }
 }
 
+- (void)editButtonClick
+{
+    NSIndexPath *indexPath = [NSIndexPath indexPathForItem:self.currentIndex inSection:0];
+    TZPhotoPreviewCell *cell = (TZPhotoPreviewCell *)[_collectionView cellForItemAtIndexPath:indexPath];
+    TZImagePickerController *_tzImagePickerVc = (TZImagePickerController *)self.navigationController;
+    
+    SLEditImageController * vc = [[SLEditImageController alloc]init];
+    vc.image = cell.previewView.imageView.image;
+    vc.modalPresentationStyle = UIModalPresentationFullScreen;
+    
+    __weak typeof(self) weakSelf = self;
+    vc.didFinishEditPhoto = ^(UIImage * _Nonnull coverImage) {
+        if ([_tzImagePickerVc.pickerDelegate respondsToSelector:@selector(imagePickerController:didFinishEditPhoto:)]) {
+            [_tzImagePickerVc.pickerDelegate imagePickerController:_tzImagePickerVc didFinishEditPhoto:coverImage];
+        }
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [_tzImagePickerVc cancelButtonClick];
+        });
+    };
+    [self presentViewController:vc animated:NO completion:nil];
+    
+}
+
 - (void)originalPhotoButtonClick {
-    TZAssetModel *model = _models[self.currentIndex];
-    if ([[TZImageManager manager] isAssetCannotBeSelected:model.asset]) {
-        return;
-    }
     _originalPhotoButton.selected = !_originalPhotoButton.isSelected;
     _isSelectOriginalPhoto = _originalPhotoButton.isSelected;
     _originalPhotoLabel.hidden = !_originalPhotoButton.isSelected;
@@ -458,6 +482,7 @@
         _currentIndex = currentIndex;
         [self refreshNaviBarAndBottomBarState];
     }
+    
     [[NSNotificationCenter defaultCenter] postNotificationName:@"photoPreviewCollectionViewDidScroll" object:nil];
 }
 
@@ -475,45 +500,32 @@
     __weak typeof(self) weakSelf = self;
     if (_tzImagePickerVc.allowPickingMultipleVideo && model.type == TZAssetModelMediaTypeVideo) {
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TZVideoPreviewCell" forIndexPath:indexPath];
-        TZVideoPreviewCell *currentCell = (TZVideoPreviewCell *)cell;
-        currentCell.iCloudSyncFailedHandle = ^(id asset, BOOL isSyncFailed) {
-            model.iCloudFailed = isSyncFailed;
-            [weakSelf didICloudSyncStatusChanged:model];
-        };
     } else if (_tzImagePickerVc.allowPickingMultipleVideo && model.type == TZAssetModelMediaTypePhotoGif && _tzImagePickerVc.allowPickingGif) {
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TZGifPreviewCell" forIndexPath:indexPath];
-        TZGifPreviewCell *currentCell = (TZGifPreviewCell *)cell;
-        currentCell.previewView.iCloudSyncFailedHandle = ^(id asset, BOOL isSyncFailed) {
-            model.iCloudFailed = isSyncFailed;
-            [weakSelf didICloudSyncStatusChanged:model];
-        };
     } else {
         cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"TZPhotoPreviewCell" forIndexPath:indexPath];
         TZPhotoPreviewCell *photoPreviewCell = (TZPhotoPreviewCell *)cell;
         photoPreviewCell.cropRect = _tzImagePickerVc.cropRect;
         photoPreviewCell.allowCrop = _tzImagePickerVc.allowCrop;
         photoPreviewCell.scaleAspectFillCrop = _tzImagePickerVc.scaleAspectFillCrop;
+        __weak typeof(_tzImagePickerVc) weakTzImagePickerVc = _tzImagePickerVc;
         __weak typeof(_collectionView) weakCollectionView = _collectionView;
         __weak typeof(photoPreviewCell) weakCell = photoPreviewCell;
         [photoPreviewCell setImageProgressUpdateBlock:^(double progress) {
             __strong typeof(weakSelf) strongSelf = weakSelf;
+            __strong typeof(weakTzImagePickerVc) strongTzImagePickerVc = weakTzImagePickerVc;
             __strong typeof(weakCollectionView) strongCollectionView = weakCollectionView;
             __strong typeof(weakCell) strongCell = weakCell;
             strongSelf.progress = progress;
             if (progress >= 1) {
                 if (strongSelf.isSelectOriginalPhoto) [strongSelf showPhotoBytes];
                 if (strongSelf.alertView && [strongCollectionView.visibleCells containsObject:strongCell]) {
-                    [strongSelf.alertView dismissViewControllerAnimated:YES completion:^{
-                        strongSelf.alertView = nil;
-                        [strongSelf doneButtonClick];
-                    }];
+                    [strongTzImagePickerVc hideAlertView:strongSelf.alertView];
+                    strongSelf.alertView = nil;
+                    [strongSelf doneButtonClick];
                 }
             }
         }];
-        photoPreviewCell.previewView.iCloudSyncFailedHandle = ^(id asset, BOOL isSyncFailed) {
-            model.iCloudFailed = isSyncFailed;
-            [weakSelf didICloudSyncStatusChanged:model];
-        };
     }
     
     cell.model = model;
@@ -521,7 +533,6 @@
         __strong typeof(weakSelf) strongSelf = weakSelf;
         [strongSelf didTapPreviewCell];
     }];
-
     return cell;
 }
 
@@ -592,8 +603,7 @@
         _originalPhotoLabel.hidden = YES;
         _doneButton.hidden = YES;
     }
-    // iCloud同步失败的UI刷新
-    [self didICloudSyncStatusChanged:model];
+    
     if (_tzImagePickerVc.photoPreviewPageDidRefreshStateBlock) {
         _tzImagePickerVc.photoPreviewPageDidRefreshStateBlock(_collectionView, _naviBar, _backButton, _selectButton, _indexLabel, _toolBar, _originalPhotoButton, _originalPhotoLabel, _doneButton, _numberImageView, _numberLabel);
     }
@@ -609,25 +619,6 @@
     });
 }
 
-- (void)didICloudSyncStatusChanged:(TZAssetModel *)model{
-    dispatch_async(dispatch_get_main_queue(), ^{
-        TZImagePickerController *_tzImagePickerVc = (TZImagePickerController *)self.navigationController;
-        // onlyReturnAsset为NO时,依赖TZ返回大图,所以需要有iCloud同步失败的提示,并且不能选择,
-        if (_tzImagePickerVc.onlyReturnAsset) {
-            return;
-        }
-        TZAssetModel *currentModel = self.models[self.currentIndex];
-        if (_tzImagePickerVc.selectedModels.count <= 0) {
-            self->_doneButton.enabled = !currentModel.iCloudFailed;
-        } else {
-            self->_doneButton.enabled = YES;
-        }
-        self->_selectButton.hidden = currentModel.iCloudFailed || !_tzImagePickerVc.showSelectBtn;
-        self->_originalPhotoButton.hidden = currentModel.iCloudFailed;
-        self->_originalPhotoLabel.hidden = currentModel.iCloudFailed;
-    });
-}
-
 - (void)showPhotoBytes {
     [[TZImageManager manager] getPhotosBytesWithArray:@[_models[self.currentIndex]] completion:^(NSString *totalBytes) {
         self->_originalPhotoLabel.text = [NSString stringWithFormat:@"(%@)",totalBytes];
@@ -636,6 +627,12 @@
 
 - (NSInteger)currentIndex {
     return [TZCommonTools tz_isRightToLeftLayout] ? self.models.count - _currentIndex - 1 : _currentIndex;
+}
+
+-(void)setAllowEdit:(BOOL)allowEdit
+{
+    _allowEdit = allowEdit;
+    _editButton.hidden = !allowEdit;
 }
 
 @end
