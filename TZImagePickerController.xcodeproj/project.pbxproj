@@ -400,14 +400,6 @@
 		395EFDFB25E4A1CB008F5ED1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				395EFDFC25E4A1CB008F5ED1 /* SLEditImageController.h */,
-				395EFDFD25E4A1CB008F5ED1 /* SLImageClipController.m */,
-				395EFDFE25E4A1CB008F5ED1 /* SLShotViewController.h */,
-				395EFDFF25E4A1CB008F5ED1 /* SLEditVideoController.m */,
-				395EFE0025E4A1CB008F5ED1 /* SLEditImageController.m */,
-				395EFE0125E4A1CB008F5ED1 /* SLImageClipController.h */,
-				395EFE0225E4A1CB008F5ED1 /* SLEditVideoController.h */,
-				395EFE0325E4A1CB008F5ED1 /* SLShotViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -524,6 +516,14 @@
 		900EEFF51C2BBF7600EA709B /* TZImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
+				395EFDFC25E4A1CB008F5ED1 /* SLEditImageController.h */,
+				395EFDFD25E4A1CB008F5ED1 /* SLImageClipController.m */,
+				395EFDFE25E4A1CB008F5ED1 /* SLShotViewController.h */,
+				395EFDFF25E4A1CB008F5ED1 /* SLEditVideoController.m */,
+				395EFE0025E4A1CB008F5ED1 /* SLEditImageController.m */,
+				395EFE0125E4A1CB008F5ED1 /* SLImageClipController.h */,
+				395EFE0225E4A1CB008F5ED1 /* SLEditVideoController.h */,
+				395EFE0325E4A1CB008F5ED1 /* SLShotViewController.m */,
 				395EFDD525E4A1CB008F5ED1 /* PhotoEdit */,
 				900EEFF61C2BBF9500EA709B /* TZImagePickerController.h */,
 				900EEFF71C2BBF9500EA709B /* TZImagePickerController.m */,
