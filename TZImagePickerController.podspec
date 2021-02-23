@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
   s.source       = { :git => "https://github.com/banchichen/TZImagePickerController.git", :tag => "3.5.8" }
   s.requires_arc = true
   s.resources    = "TZImagePickerController/TZImagePickerController/*.{png,bundle}"
-  s.source_files = "TZImagePickerController/TZImagePickerController/*.{h,m}"
+  s.source_files = "TZImagePickerController/TZImagePickerController/*.{h,m,pch}"
   s.ios.vendored_frameworks = "TZImagePickerController/TZImagePickerController/WebP.framework"
   s.frameworks   = "Photos"
 end
