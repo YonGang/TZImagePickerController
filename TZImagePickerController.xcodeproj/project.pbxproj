@@ -528,7 +528,6 @@
 		900E657E1C2BB8D5003D9A9E /* TZImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC2525E3B410008F5ED1 /* PhotoEdit */,
 				901F228F215CABD600F604ED /* FLAnimatedImage */,
 				900EEFF51C2BBF7600EA709B /* TZImagePickerController */,
 				900E65821C2BB8D5003D9A9E /* AppDelegate.h */,
@@ -582,6 +581,7 @@
 		900EEFF51C2BBF7600EA709B /* TZImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
+				395EFC2525E3B410008F5ED1 /* PhotoEdit */,
 				900EEFF61C2BBF9500EA709B /* TZImagePickerController.h */,
 				900EEFF71C2BBF9500EA709B /* TZImagePickerController.m */,
 				900EEFFC1C2BD58B00EA709B /* TZPhotoPickerController.h */,
