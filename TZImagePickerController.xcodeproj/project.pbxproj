@@ -7,90 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		395EFC6725E3B410008F5ED1 /* SLPaddingLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC2825E3B410008F5ED1 /* SLPaddingLabel.h */; };
-		395EFC6825E3B410008F5ED1 /* SLBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2925E3B410008F5ED1 /* SLBlurView.m */; };
-		395EFC6925E3B410008F5ED1 /* SLBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2925E3B410008F5ED1 /* SLBlurView.m */; };
-		395EFC6A25E3B410008F5ED1 /* SLPaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2A25E3B410008F5ED1 /* SLPaddingLabel.m */; };
-		395EFC6B25E3B410008F5ED1 /* SLPaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2A25E3B410008F5ED1 /* SLPaddingLabel.m */; };
-		395EFC6C25E3B410008F5ED1 /* SLBlurView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC2B25E3B410008F5ED1 /* SLBlurView.h */; };
-		395EFC6D25E3B410008F5ED1 /* SLAvWriterInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2D25E3B410008F5ED1 /* SLAvWriterInput.m */; };
-		395EFC6E25E3B410008F5ED1 /* SLAvWriterInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2D25E3B410008F5ED1 /* SLAvWriterInput.m */; };
-		395EFC6F25E3B410008F5ED1 /* SLAvEditExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2E25E3B410008F5ED1 /* SLAvEditExport.m */; };
-		395EFC7025E3B410008F5ED1 /* SLAvEditExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2E25E3B410008F5ED1 /* SLAvEditExport.m */; };
-		395EFC7125E3B410008F5ED1 /* SLAvCaptureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2F25E3B410008F5ED1 /* SLAvCaptureTool.m */; };
-		395EFC7225E3B410008F5ED1 /* SLAvCaptureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC2F25E3B410008F5ED1 /* SLAvCaptureTool.m */; };
-		395EFC7325E3B410008F5ED1 /* SLAvPlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3025E3B410008F5ED1 /* SLAvPlayer.h */; };
-		395EFC7425E3B410008F5ED1 /* SLAvCaptureSession.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3125E3B410008F5ED1 /* SLAvCaptureSession.h */; };
-		395EFC7525E3B410008F5ED1 /* SLAvEditExport.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3225E3B410008F5ED1 /* SLAvEditExport.h */; };
-		395EFC7625E3B410008F5ED1 /* SLAvWriterInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3325E3B410008F5ED1 /* SLAvWriterInput.h */; };
-		395EFC7725E3B410008F5ED1 /* SLAvPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3425E3B410008F5ED1 /* SLAvPlayer.m */; };
-		395EFC7825E3B410008F5ED1 /* SLAvPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3425E3B410008F5ED1 /* SLAvPlayer.m */; };
-		395EFC7925E3B410008F5ED1 /* SLAvCaptureTool.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3525E3B410008F5ED1 /* SLAvCaptureTool.h */; };
-		395EFC7A25E3B410008F5ED1 /* SLAvCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3625E3B410008F5ED1 /* SLAvCaptureSession.m */; };
-		395EFC7B25E3B410008F5ED1 /* SLAvCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3625E3B410008F5ED1 /* SLAvCaptureSession.m */; };
-		395EFC7C25E3B410008F5ED1 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395EFC3825E3B410008F5ED1 /* WebP.framework */; };
-		395EFC7D25E3B410008F5ED1 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395EFC3825E3B410008F5ED1 /* WebP.framework */; };
-		395EFC7E25E3B410008F5ED1 /* SLImageDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3925E3B410008F5ED1 /* SLImageDecoder.h */; };
-		395EFC7F25E3B410008F5ED1 /* SLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3A25E3B410008F5ED1 /* SLImageView.m */; };
-		395EFC8025E3B410008F5ED1 /* SLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3A25E3B410008F5ED1 /* SLImageView.m */; };
-		395EFC8125E3B410008F5ED1 /* SLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3B25E3B410008F5ED1 /* SLImage.m */; };
-		395EFC8225E3B410008F5ED1 /* SLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3B25E3B410008F5ED1 /* SLImage.m */; };
-		395EFC8325E3B410008F5ED1 /* SLImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3C25E3B410008F5ED1 /* SLImageDecoder.m */; };
-		395EFC8425E3B410008F5ED1 /* SLImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC3C25E3B410008F5ED1 /* SLImageDecoder.m */; };
-		395EFC8525E3B410008F5ED1 /* SLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3D25E3B410008F5ED1 /* SLImage.h */; };
-		395EFC8625E3B410008F5ED1 /* SLImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC3E25E3B410008F5ED1 /* SLImageView.h */; };
-		395EFC8725E3B410008F5ED1 /* SLDelayPerform.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4025E3B410008F5ED1 /* SLDelayPerform.m */; };
-		395EFC8825E3B410008F5ED1 /* SLDelayPerform.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4025E3B410008F5ED1 /* SLDelayPerform.m */; };
-		395EFC8925E3B410008F5ED1 /* SLDelayPerform.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC4125E3B410008F5ED1 /* SLDelayPerform.h */; };
-		395EFC8A25E3B410008F5ED1 /* PrefixHeader.pch in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC4225E3B410008F5ED1 /* PrefixHeader.pch */; };
-		395EFC8B25E3B410008F5ED1 /* UIView+SLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4425E3B410008F5ED1 /* UIView+SLFrame.m */; };
-		395EFC8C25E3B410008F5ED1 /* UIView+SLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4425E3B410008F5ED1 /* UIView+SLFrame.m */; };
-		395EFC8D25E3B410008F5ED1 /* UIImage+SLCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC4525E3B410008F5ED1 /* UIImage+SLCommon.h */; };
-		395EFC8E25E3B410008F5ED1 /* UIView+SLImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC4625E3B410008F5ED1 /* UIView+SLImage.h */; };
-		395EFC8F25E3B410008F5ED1 /* UIView+SLFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC4725E3B410008F5ED1 /* UIView+SLFrame.h */; };
-		395EFC9025E3B410008F5ED1 /* UIView+SLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4825E3B410008F5ED1 /* UIView+SLImage.m */; };
-		395EFC9125E3B410008F5ED1 /* UIView+SLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4825E3B410008F5ED1 /* UIView+SLImage.m */; };
-		395EFC9225E3B410008F5ED1 /* UIImage+SLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4925E3B410008F5ED1 /* UIImage+SLCommon.m */; };
-		395EFC9325E3B410008F5ED1 /* UIImage+SLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4925E3B410008F5ED1 /* UIImage+SLCommon.m */; };
-		395EFC9425E3B410008F5ED1 /* SLEditImageController.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC4C25E3B410008F5ED1 /* SLEditImageController.h */; };
-		395EFC9525E3B410008F5ED1 /* SLImageClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4D25E3B410008F5ED1 /* SLImageClipController.m */; };
-		395EFC9625E3B410008F5ED1 /* SLImageClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4D25E3B410008F5ED1 /* SLImageClipController.m */; };
-		395EFC9725E3B410008F5ED1 /* SLShotViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC4E25E3B410008F5ED1 /* SLShotViewController.h */; };
-		395EFC9825E3B410008F5ED1 /* SLEditVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4F25E3B410008F5ED1 /* SLEditVideoController.m */; };
-		395EFC9925E3B410008F5ED1 /* SLEditVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC4F25E3B410008F5ED1 /* SLEditVideoController.m */; };
-		395EFC9A25E3B410008F5ED1 /* SLEditImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5025E3B410008F5ED1 /* SLEditImageController.m */; };
-		395EFC9B25E3B410008F5ED1 /* SLEditImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5025E3B410008F5ED1 /* SLEditImageController.m */; };
-		395EFC9C25E3B410008F5ED1 /* SLImageClipController.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC5125E3B410008F5ED1 /* SLImageClipController.h */; };
-		395EFC9D25E3B410008F5ED1 /* SLEditVideoController.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC5225E3B410008F5ED1 /* SLEditVideoController.h */; };
-		395EFC9E25E3B410008F5ED1 /* SLShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5325E3B410008F5ED1 /* SLShotViewController.m */; };
-		395EFC9F25E3B410008F5ED1 /* SLShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5325E3B410008F5ED1 /* SLShotViewController.m */; };
-		395EFCA025E3B410008F5ED1 /* SLGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5525E3B410008F5ED1 /* SLGridView.m */; };
-		395EFCA125E3B410008F5ED1 /* SLGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5525E3B410008F5ED1 /* SLGridView.m */; };
-		395EFCA225E3B410008F5ED1 /* SLEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5625E3B410008F5ED1 /* SLEditTextView.m */; };
-		395EFCA325E3B410008F5ED1 /* SLEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5625E3B410008F5ED1 /* SLEditTextView.m */; };
-		395EFCA425E3B410008F5ED1 /* SLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5725E3B410008F5ED1 /* SLDrawView.m */; };
-		395EFCA525E3B410008F5ED1 /* SLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5725E3B410008F5ED1 /* SLDrawView.m */; };
-		395EFCA625E3B410008F5ED1 /* SLEditMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5825E3B410008F5ED1 /* SLEditMenuView.m */; };
-		395EFCA725E3B410008F5ED1 /* SLEditMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5825E3B410008F5ED1 /* SLEditMenuView.m */; };
-		395EFCA825E3B410008F5ED1 /* SLImageZoomView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC5925E3B410008F5ED1 /* SLImageZoomView.h */; };
-		395EFCA925E3B410008F5ED1 /* SLEditSelectedBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC5A25E3B410008F5ED1 /* SLEditSelectedBox.h */; };
-		395EFCAA25E3B410008F5ED1 /* SLEditVideoClipping.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC5B25E3B410008F5ED1 /* SLEditVideoClipping.h */; };
-		395EFCAB25E3B410008F5ED1 /* SLShotFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5C25E3B410008F5ED1 /* SLShotFocusView.m */; };
-		395EFCAC25E3B410008F5ED1 /* SLShotFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5C25E3B410008F5ED1 /* SLShotFocusView.m */; };
-		395EFCAD25E3B410008F5ED1 /* SLMosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5D25E3B410008F5ED1 /* SLMosaicView.m */; };
-		395EFCAE25E3B410008F5ED1 /* SLMosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC5D25E3B410008F5ED1 /* SLMosaicView.m */; };
-		395EFCAF25E3B410008F5ED1 /* SLDrawView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC5E25E3B410008F5ED1 /* SLDrawView.h */; };
-		395EFCB025E3B410008F5ED1 /* SLGridView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC5F25E3B410008F5ED1 /* SLGridView.h */; };
-		395EFCB125E3B410008F5ED1 /* SLEditTextView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC6025E3B410008F5ED1 /* SLEditTextView.h */; };
-		395EFCB225E3B410008F5ED1 /* SLImageZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC6125E3B410008F5ED1 /* SLImageZoomView.m */; };
-		395EFCB325E3B410008F5ED1 /* SLImageZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC6125E3B410008F5ED1 /* SLImageZoomView.m */; };
-		395EFCB425E3B410008F5ED1 /* SLEditMenuView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC6225E3B410008F5ED1 /* SLEditMenuView.h */; };
-		395EFCB525E3B410008F5ED1 /* SLEditVideoClipping.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC6325E3B410008F5ED1 /* SLEditVideoClipping.m */; };
-		395EFCB625E3B410008F5ED1 /* SLEditVideoClipping.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC6325E3B410008F5ED1 /* SLEditVideoClipping.m */; };
-		395EFCB725E3B410008F5ED1 /* SLEditSelectedBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC6425E3B410008F5ED1 /* SLEditSelectedBox.m */; };
-		395EFCB825E3B410008F5ED1 /* SLEditSelectedBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFC6425E3B410008F5ED1 /* SLEditSelectedBox.m */; };
-		395EFCB925E3B410008F5ED1 /* SLMosaicView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC6525E3B410008F5ED1 /* SLMosaicView.h */; };
-		395EFCBA25E3B410008F5ED1 /* SLShotFocusView.h in Headers */ = {isa = PBXBuildFile; fileRef = 395EFC6625E3B410008F5ED1 /* SLShotFocusView.h */; };
+		395EFE1725E4A1CB008F5ED1 /* SLBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDD925E4A1CB008F5ED1 /* SLBlurView.m */; };
+		395EFE1825E4A1CB008F5ED1 /* SLPaddingLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDDA25E4A1CB008F5ED1 /* SLPaddingLabel.m */; };
+		395EFE1925E4A1CB008F5ED1 /* SLAvWriterInput.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDDD25E4A1CB008F5ED1 /* SLAvWriterInput.m */; };
+		395EFE1A25E4A1CB008F5ED1 /* SLAvEditExport.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDDE25E4A1CB008F5ED1 /* SLAvEditExport.m */; };
+		395EFE1B25E4A1CB008F5ED1 /* SLAvCaptureTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDDF25E4A1CB008F5ED1 /* SLAvCaptureTool.m */; };
+		395EFE1C25E4A1CB008F5ED1 /* SLAvPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDE425E4A1CB008F5ED1 /* SLAvPlayer.m */; };
+		395EFE1D25E4A1CB008F5ED1 /* SLAvCaptureSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDE625E4A1CB008F5ED1 /* SLAvCaptureSession.m */; };
+		395EFE1E25E4A1CB008F5ED1 /* WebP.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 395EFDE825E4A1CB008F5ED1 /* WebP.framework */; };
+		395EFE1F25E4A1CB008F5ED1 /* SLImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDEA25E4A1CB008F5ED1 /* SLImageView.m */; };
+		395EFE2025E4A1CB008F5ED1 /* SLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDEB25E4A1CB008F5ED1 /* SLImage.m */; };
+		395EFE2125E4A1CB008F5ED1 /* SLImageDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDEC25E4A1CB008F5ED1 /* SLImageDecoder.m */; };
+		395EFE2225E4A1CB008F5ED1 /* SLDelayPerform.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDF025E4A1CB008F5ED1 /* SLDelayPerform.m */; };
+		395EFE2325E4A1CB008F5ED1 /* UIView+SLFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDF425E4A1CB008F5ED1 /* UIView+SLFrame.m */; };
+		395EFE2425E4A1CB008F5ED1 /* UIView+SLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDF825E4A1CB008F5ED1 /* UIView+SLImage.m */; };
+		395EFE2525E4A1CB008F5ED1 /* UIImage+SLCommon.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDF925E4A1CB008F5ED1 /* UIImage+SLCommon.m */; };
+		395EFE2625E4A1CB008F5ED1 /* SLImageClipController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDFD25E4A1CB008F5ED1 /* SLImageClipController.m */; };
+		395EFE2725E4A1CB008F5ED1 /* SLEditVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFDFF25E4A1CB008F5ED1 /* SLEditVideoController.m */; };
+		395EFE2825E4A1CB008F5ED1 /* SLEditImageController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0025E4A1CB008F5ED1 /* SLEditImageController.m */; };
+		395EFE2925E4A1CB008F5ED1 /* SLShotViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0325E4A1CB008F5ED1 /* SLShotViewController.m */; };
+		395EFE2A25E4A1CB008F5ED1 /* SLGridView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0525E4A1CB008F5ED1 /* SLGridView.m */; };
+		395EFE2B25E4A1CB008F5ED1 /* SLEditTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0625E4A1CB008F5ED1 /* SLEditTextView.m */; };
+		395EFE2C25E4A1CB008F5ED1 /* SLDrawView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0725E4A1CB008F5ED1 /* SLDrawView.m */; };
+		395EFE2D25E4A1CB008F5ED1 /* SLEditMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0825E4A1CB008F5ED1 /* SLEditMenuView.m */; };
+		395EFE2E25E4A1CB008F5ED1 /* SLShotFocusView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0C25E4A1CB008F5ED1 /* SLShotFocusView.m */; };
+		395EFE2F25E4A1CB008F5ED1 /* SLMosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE0D25E4A1CB008F5ED1 /* SLMosaicView.m */; };
+		395EFE3025E4A1CB008F5ED1 /* SLImageZoomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE1125E4A1CB008F5ED1 /* SLImageZoomView.m */; };
+		395EFE3125E4A1CB008F5ED1 /* SLEditVideoClipping.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE1325E4A1CB008F5ED1 /* SLEditVideoClipping.m */; };
+		395EFE3225E4A1CB008F5ED1 /* SLEditSelectedBox.m in Sources */ = {isa = PBXBuildFile; fileRef = 395EFE1425E4A1CB008F5ED1 /* SLEditSelectedBox.m */; };
 		6D32B9BD1CD83640005CE1E0 /* LxGridViewFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D32B9BC1CD83640005CE1E0 /* LxGridViewFlowLayout.m */; };
 		6D4608311DFFC60D004FB009 /* TZGifPhotoPreviewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D4608301DFFC60D004FB009 /* TZGifPhotoPreviewController.m */; };
 		6D5358CD1D64600F00928CC6 /* NSBundle+TZImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 6D5358CC1D64600F00928CC6 /* NSBundle+TZImagePicker.m */; };
@@ -197,62 +141,62 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		395EFC2825E3B410008F5ED1 /* SLPaddingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPaddingLabel.h; sourceTree = "<group>"; };
-		395EFC2925E3B410008F5ED1 /* SLBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBlurView.m; sourceTree = "<group>"; };
-		395EFC2A25E3B410008F5ED1 /* SLPaddingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPaddingLabel.m; sourceTree = "<group>"; };
-		395EFC2B25E3B410008F5ED1 /* SLBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBlurView.h; sourceTree = "<group>"; };
-		395EFC2D25E3B410008F5ED1 /* SLAvWriterInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvWriterInput.m; sourceTree = "<group>"; };
-		395EFC2E25E3B410008F5ED1 /* SLAvEditExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvEditExport.m; sourceTree = "<group>"; };
-		395EFC2F25E3B410008F5ED1 /* SLAvCaptureTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvCaptureTool.m; sourceTree = "<group>"; };
-		395EFC3025E3B410008F5ED1 /* SLAvPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvPlayer.h; sourceTree = "<group>"; };
-		395EFC3125E3B410008F5ED1 /* SLAvCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvCaptureSession.h; sourceTree = "<group>"; };
-		395EFC3225E3B410008F5ED1 /* SLAvEditExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvEditExport.h; sourceTree = "<group>"; };
-		395EFC3325E3B410008F5ED1 /* SLAvWriterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvWriterInput.h; sourceTree = "<group>"; };
-		395EFC3425E3B410008F5ED1 /* SLAvPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvPlayer.m; sourceTree = "<group>"; };
-		395EFC3525E3B410008F5ED1 /* SLAvCaptureTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvCaptureTool.h; sourceTree = "<group>"; };
-		395EFC3625E3B410008F5ED1 /* SLAvCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvCaptureSession.m; sourceTree = "<group>"; };
-		395EFC3825E3B410008F5ED1 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
-		395EFC3925E3B410008F5ED1 /* SLImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageDecoder.h; sourceTree = "<group>"; };
-		395EFC3A25E3B410008F5ED1 /* SLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageView.m; sourceTree = "<group>"; };
-		395EFC3B25E3B410008F5ED1 /* SLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImage.m; sourceTree = "<group>"; };
-		395EFC3C25E3B410008F5ED1 /* SLImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageDecoder.m; sourceTree = "<group>"; };
-		395EFC3D25E3B410008F5ED1 /* SLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImage.h; sourceTree = "<group>"; };
-		395EFC3E25E3B410008F5ED1 /* SLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageView.h; sourceTree = "<group>"; };
-		395EFC4025E3B410008F5ED1 /* SLDelayPerform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDelayPerform.m; sourceTree = "<group>"; };
-		395EFC4125E3B410008F5ED1 /* SLDelayPerform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDelayPerform.h; sourceTree = "<group>"; };
-		395EFC4225E3B410008F5ED1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
-		395EFC4425E3B410008F5ED1 /* UIView+SLFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLFrame.m"; sourceTree = "<group>"; };
-		395EFC4525E3B410008F5ED1 /* UIImage+SLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SLCommon.h"; sourceTree = "<group>"; };
-		395EFC4625E3B410008F5ED1 /* UIView+SLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLImage.h"; sourceTree = "<group>"; };
-		395EFC4725E3B410008F5ED1 /* UIView+SLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLFrame.h"; sourceTree = "<group>"; };
-		395EFC4825E3B410008F5ED1 /* UIView+SLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLImage.m"; sourceTree = "<group>"; };
-		395EFC4925E3B410008F5ED1 /* UIImage+SLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SLCommon.m"; sourceTree = "<group>"; };
-		395EFC4C25E3B410008F5ED1 /* SLEditImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditImageController.h; sourceTree = "<group>"; };
-		395EFC4D25E3B410008F5ED1 /* SLImageClipController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageClipController.m; sourceTree = "<group>"; };
-		395EFC4E25E3B410008F5ED1 /* SLShotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLShotViewController.h; sourceTree = "<group>"; };
-		395EFC4F25E3B410008F5ED1 /* SLEditVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditVideoController.m; sourceTree = "<group>"; };
-		395EFC5025E3B410008F5ED1 /* SLEditImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditImageController.m; sourceTree = "<group>"; };
-		395EFC5125E3B410008F5ED1 /* SLImageClipController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageClipController.h; sourceTree = "<group>"; };
-		395EFC5225E3B410008F5ED1 /* SLEditVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditVideoController.h; sourceTree = "<group>"; };
-		395EFC5325E3B410008F5ED1 /* SLShotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLShotViewController.m; sourceTree = "<group>"; };
-		395EFC5525E3B410008F5ED1 /* SLGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGridView.m; sourceTree = "<group>"; };
-		395EFC5625E3B410008F5ED1 /* SLEditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditTextView.m; sourceTree = "<group>"; };
-		395EFC5725E3B410008F5ED1 /* SLDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDrawView.m; sourceTree = "<group>"; };
-		395EFC5825E3B410008F5ED1 /* SLEditMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditMenuView.m; sourceTree = "<group>"; };
-		395EFC5925E3B410008F5ED1 /* SLImageZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageZoomView.h; sourceTree = "<group>"; };
-		395EFC5A25E3B410008F5ED1 /* SLEditSelectedBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditSelectedBox.h; sourceTree = "<group>"; };
-		395EFC5B25E3B410008F5ED1 /* SLEditVideoClipping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditVideoClipping.h; sourceTree = "<group>"; };
-		395EFC5C25E3B410008F5ED1 /* SLShotFocusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLShotFocusView.m; sourceTree = "<group>"; };
-		395EFC5D25E3B410008F5ED1 /* SLMosaicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMosaicView.m; sourceTree = "<group>"; };
-		395EFC5E25E3B410008F5ED1 /* SLDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDrawView.h; sourceTree = "<group>"; };
-		395EFC5F25E3B410008F5ED1 /* SLGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLGridView.h; sourceTree = "<group>"; };
-		395EFC6025E3B410008F5ED1 /* SLEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditTextView.h; sourceTree = "<group>"; };
-		395EFC6125E3B410008F5ED1 /* SLImageZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageZoomView.m; sourceTree = "<group>"; };
-		395EFC6225E3B410008F5ED1 /* SLEditMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditMenuView.h; sourceTree = "<group>"; };
-		395EFC6325E3B410008F5ED1 /* SLEditVideoClipping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditVideoClipping.m; sourceTree = "<group>"; };
-		395EFC6425E3B410008F5ED1 /* SLEditSelectedBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditSelectedBox.m; sourceTree = "<group>"; };
-		395EFC6525E3B410008F5ED1 /* SLMosaicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMosaicView.h; sourceTree = "<group>"; };
-		395EFC6625E3B410008F5ED1 /* SLShotFocusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLShotFocusView.h; sourceTree = "<group>"; };
+		395EFDD825E4A1CB008F5ED1 /* SLPaddingLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPaddingLabel.h; sourceTree = "<group>"; };
+		395EFDD925E4A1CB008F5ED1 /* SLBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLBlurView.m; sourceTree = "<group>"; };
+		395EFDDA25E4A1CB008F5ED1 /* SLPaddingLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPaddingLabel.m; sourceTree = "<group>"; };
+		395EFDDB25E4A1CB008F5ED1 /* SLBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLBlurView.h; sourceTree = "<group>"; };
+		395EFDDD25E4A1CB008F5ED1 /* SLAvWriterInput.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvWriterInput.m; sourceTree = "<group>"; };
+		395EFDDE25E4A1CB008F5ED1 /* SLAvEditExport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvEditExport.m; sourceTree = "<group>"; };
+		395EFDDF25E4A1CB008F5ED1 /* SLAvCaptureTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvCaptureTool.m; sourceTree = "<group>"; };
+		395EFDE025E4A1CB008F5ED1 /* SLAvPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvPlayer.h; sourceTree = "<group>"; };
+		395EFDE125E4A1CB008F5ED1 /* SLAvCaptureSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvCaptureSession.h; sourceTree = "<group>"; };
+		395EFDE225E4A1CB008F5ED1 /* SLAvEditExport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvEditExport.h; sourceTree = "<group>"; };
+		395EFDE325E4A1CB008F5ED1 /* SLAvWriterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvWriterInput.h; sourceTree = "<group>"; };
+		395EFDE425E4A1CB008F5ED1 /* SLAvPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvPlayer.m; sourceTree = "<group>"; };
+		395EFDE525E4A1CB008F5ED1 /* SLAvCaptureTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAvCaptureTool.h; sourceTree = "<group>"; };
+		395EFDE625E4A1CB008F5ED1 /* SLAvCaptureSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAvCaptureSession.m; sourceTree = "<group>"; };
+		395EFDE825E4A1CB008F5ED1 /* WebP.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebP.framework; sourceTree = "<group>"; };
+		395EFDE925E4A1CB008F5ED1 /* SLImageDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageDecoder.h; sourceTree = "<group>"; };
+		395EFDEA25E4A1CB008F5ED1 /* SLImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageView.m; sourceTree = "<group>"; };
+		395EFDEB25E4A1CB008F5ED1 /* SLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImage.m; sourceTree = "<group>"; };
+		395EFDEC25E4A1CB008F5ED1 /* SLImageDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageDecoder.m; sourceTree = "<group>"; };
+		395EFDED25E4A1CB008F5ED1 /* SLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImage.h; sourceTree = "<group>"; };
+		395EFDEE25E4A1CB008F5ED1 /* SLImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageView.h; sourceTree = "<group>"; };
+		395EFDF025E4A1CB008F5ED1 /* SLDelayPerform.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDelayPerform.m; sourceTree = "<group>"; };
+		395EFDF125E4A1CB008F5ED1 /* SLDelayPerform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDelayPerform.h; sourceTree = "<group>"; };
+		395EFDF225E4A1CB008F5ED1 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		395EFDF425E4A1CB008F5ED1 /* UIView+SLFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLFrame.m"; sourceTree = "<group>"; };
+		395EFDF525E4A1CB008F5ED1 /* UIImage+SLCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+SLCommon.h"; sourceTree = "<group>"; };
+		395EFDF625E4A1CB008F5ED1 /* UIView+SLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLImage.h"; sourceTree = "<group>"; };
+		395EFDF725E4A1CB008F5ED1 /* UIView+SLFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+SLFrame.h"; sourceTree = "<group>"; };
+		395EFDF825E4A1CB008F5ED1 /* UIView+SLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+SLImage.m"; sourceTree = "<group>"; };
+		395EFDF925E4A1CB008F5ED1 /* UIImage+SLCommon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+SLCommon.m"; sourceTree = "<group>"; };
+		395EFDFC25E4A1CB008F5ED1 /* SLEditImageController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditImageController.h; sourceTree = "<group>"; };
+		395EFDFD25E4A1CB008F5ED1 /* SLImageClipController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageClipController.m; sourceTree = "<group>"; };
+		395EFDFE25E4A1CB008F5ED1 /* SLShotViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLShotViewController.h; sourceTree = "<group>"; };
+		395EFDFF25E4A1CB008F5ED1 /* SLEditVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditVideoController.m; sourceTree = "<group>"; };
+		395EFE0025E4A1CB008F5ED1 /* SLEditImageController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditImageController.m; sourceTree = "<group>"; };
+		395EFE0125E4A1CB008F5ED1 /* SLImageClipController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageClipController.h; sourceTree = "<group>"; };
+		395EFE0225E4A1CB008F5ED1 /* SLEditVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditVideoController.h; sourceTree = "<group>"; };
+		395EFE0325E4A1CB008F5ED1 /* SLShotViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLShotViewController.m; sourceTree = "<group>"; };
+		395EFE0525E4A1CB008F5ED1 /* SLGridView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLGridView.m; sourceTree = "<group>"; };
+		395EFE0625E4A1CB008F5ED1 /* SLEditTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditTextView.m; sourceTree = "<group>"; };
+		395EFE0725E4A1CB008F5ED1 /* SLDrawView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLDrawView.m; sourceTree = "<group>"; };
+		395EFE0825E4A1CB008F5ED1 /* SLEditMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditMenuView.m; sourceTree = "<group>"; };
+		395EFE0925E4A1CB008F5ED1 /* SLImageZoomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLImageZoomView.h; sourceTree = "<group>"; };
+		395EFE0A25E4A1CB008F5ED1 /* SLEditSelectedBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditSelectedBox.h; sourceTree = "<group>"; };
+		395EFE0B25E4A1CB008F5ED1 /* SLEditVideoClipping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditVideoClipping.h; sourceTree = "<group>"; };
+		395EFE0C25E4A1CB008F5ED1 /* SLShotFocusView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLShotFocusView.m; sourceTree = "<group>"; };
+		395EFE0D25E4A1CB008F5ED1 /* SLMosaicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLMosaicView.m; sourceTree = "<group>"; };
+		395EFE0E25E4A1CB008F5ED1 /* SLDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLDrawView.h; sourceTree = "<group>"; };
+		395EFE0F25E4A1CB008F5ED1 /* SLGridView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLGridView.h; sourceTree = "<group>"; };
+		395EFE1025E4A1CB008F5ED1 /* SLEditTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditTextView.h; sourceTree = "<group>"; };
+		395EFE1125E4A1CB008F5ED1 /* SLImageZoomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLImageZoomView.m; sourceTree = "<group>"; };
+		395EFE1225E4A1CB008F5ED1 /* SLEditMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLEditMenuView.h; sourceTree = "<group>"; };
+		395EFE1325E4A1CB008F5ED1 /* SLEditVideoClipping.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditVideoClipping.m; sourceTree = "<group>"; };
+		395EFE1425E4A1CB008F5ED1 /* SLEditSelectedBox.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLEditSelectedBox.m; sourceTree = "<group>"; };
+		395EFE1525E4A1CB008F5ED1 /* SLMosaicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLMosaicView.h; sourceTree = "<group>"; };
+		395EFE1625E4A1CB008F5ED1 /* SLShotFocusView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLShotFocusView.h; sourceTree = "<group>"; };
 		6D12FC191D66B71E00182C44 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		6D12FC1A1D66B71E00182C44 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		6D32B9BB1CD83640005CE1E0 /* LxGridViewFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LxGridViewFlowLayout.h; sourceTree = "<group>"; };
@@ -329,7 +273,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				395EFC7C25E3B410008F5ED1 /* WebP.framework in Frameworks */,
+				395EFE1E25E4A1CB008F5ED1 /* WebP.framework in Frameworks */,
 				903996931F447604005E77C2 /* Photos.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,144 +296,143 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				395EFC7D25E3B410008F5ED1 /* WebP.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		395EFC2525E3B410008F5ED1 /* PhotoEdit */ = {
+		395EFDD525E4A1CB008F5ED1 /* PhotoEdit */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC2625E3B410008F5ED1 /* General */,
-				395EFC4325E3B410008F5ED1 /* SLCategory */,
-				395EFC4A25E3B410008F5ED1 /* SmallVideo */,
+				395EFDD625E4A1CB008F5ED1 /* General */,
+				395EFDF325E4A1CB008F5ED1 /* SLCategory */,
+				395EFDFA25E4A1CB008F5ED1 /* SmallVideo */,
 			);
 			path = PhotoEdit;
 			sourceTree = "<group>";
 		};
-		395EFC2625E3B410008F5ED1 /* General */ = {
+		395EFDD625E4A1CB008F5ED1 /* General */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC2725E3B410008F5ED1 /* UI */,
-				395EFC2C25E3B410008F5ED1 /* AV */,
-				395EFC3725E3B410008F5ED1 /* SLAnimateImageView */,
-				395EFC3F25E3B410008F5ED1 /* Tool */,
+				395EFDD725E4A1CB008F5ED1 /* UI */,
+				395EFDDC25E4A1CB008F5ED1 /* AV */,
+				395EFDE725E4A1CB008F5ED1 /* SLAnimateImageView */,
+				395EFDEF25E4A1CB008F5ED1 /* Tool */,
 			);
 			path = General;
 			sourceTree = "<group>";
 		};
-		395EFC2725E3B410008F5ED1 /* UI */ = {
+		395EFDD725E4A1CB008F5ED1 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC2825E3B410008F5ED1 /* SLPaddingLabel.h */,
-				395EFC2925E3B410008F5ED1 /* SLBlurView.m */,
-				395EFC2A25E3B410008F5ED1 /* SLPaddingLabel.m */,
-				395EFC2B25E3B410008F5ED1 /* SLBlurView.h */,
+				395EFDD825E4A1CB008F5ED1 /* SLPaddingLabel.h */,
+				395EFDD925E4A1CB008F5ED1 /* SLBlurView.m */,
+				395EFDDA25E4A1CB008F5ED1 /* SLPaddingLabel.m */,
+				395EFDDB25E4A1CB008F5ED1 /* SLBlurView.h */,
 			);
 			path = UI;
 			sourceTree = "<group>";
 		};
-		395EFC2C25E3B410008F5ED1 /* AV */ = {
+		395EFDDC25E4A1CB008F5ED1 /* AV */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC2D25E3B410008F5ED1 /* SLAvWriterInput.m */,
-				395EFC2E25E3B410008F5ED1 /* SLAvEditExport.m */,
-				395EFC2F25E3B410008F5ED1 /* SLAvCaptureTool.m */,
-				395EFC3025E3B410008F5ED1 /* SLAvPlayer.h */,
-				395EFC3125E3B410008F5ED1 /* SLAvCaptureSession.h */,
-				395EFC3225E3B410008F5ED1 /* SLAvEditExport.h */,
-				395EFC3325E3B410008F5ED1 /* SLAvWriterInput.h */,
-				395EFC3425E3B410008F5ED1 /* SLAvPlayer.m */,
-				395EFC3525E3B410008F5ED1 /* SLAvCaptureTool.h */,
-				395EFC3625E3B410008F5ED1 /* SLAvCaptureSession.m */,
+				395EFDDD25E4A1CB008F5ED1 /* SLAvWriterInput.m */,
+				395EFDDE25E4A1CB008F5ED1 /* SLAvEditExport.m */,
+				395EFDDF25E4A1CB008F5ED1 /* SLAvCaptureTool.m */,
+				395EFDE025E4A1CB008F5ED1 /* SLAvPlayer.h */,
+				395EFDE125E4A1CB008F5ED1 /* SLAvCaptureSession.h */,
+				395EFDE225E4A1CB008F5ED1 /* SLAvEditExport.h */,
+				395EFDE325E4A1CB008F5ED1 /* SLAvWriterInput.h */,
+				395EFDE425E4A1CB008F5ED1 /* SLAvPlayer.m */,
+				395EFDE525E4A1CB008F5ED1 /* SLAvCaptureTool.h */,
+				395EFDE625E4A1CB008F5ED1 /* SLAvCaptureSession.m */,
 			);
 			path = AV;
 			sourceTree = "<group>";
 		};
-		395EFC3725E3B410008F5ED1 /* SLAnimateImageView */ = {
+		395EFDE725E4A1CB008F5ED1 /* SLAnimateImageView */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC3825E3B410008F5ED1 /* WebP.framework */,
-				395EFC3925E3B410008F5ED1 /* SLImageDecoder.h */,
-				395EFC3A25E3B410008F5ED1 /* SLImageView.m */,
-				395EFC3B25E3B410008F5ED1 /* SLImage.m */,
-				395EFC3C25E3B410008F5ED1 /* SLImageDecoder.m */,
-				395EFC3D25E3B410008F5ED1 /* SLImage.h */,
-				395EFC3E25E3B410008F5ED1 /* SLImageView.h */,
+				395EFDE825E4A1CB008F5ED1 /* WebP.framework */,
+				395EFDE925E4A1CB008F5ED1 /* SLImageDecoder.h */,
+				395EFDEA25E4A1CB008F5ED1 /* SLImageView.m */,
+				395EFDEB25E4A1CB008F5ED1 /* SLImage.m */,
+				395EFDEC25E4A1CB008F5ED1 /* SLImageDecoder.m */,
+				395EFDED25E4A1CB008F5ED1 /* SLImage.h */,
+				395EFDEE25E4A1CB008F5ED1 /* SLImageView.h */,
 			);
 			path = SLAnimateImageView;
 			sourceTree = "<group>";
 		};
-		395EFC3F25E3B410008F5ED1 /* Tool */ = {
+		395EFDEF25E4A1CB008F5ED1 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC4025E3B410008F5ED1 /* SLDelayPerform.m */,
-				395EFC4125E3B410008F5ED1 /* SLDelayPerform.h */,
-				395EFC4225E3B410008F5ED1 /* PrefixHeader.pch */,
+				395EFDF025E4A1CB008F5ED1 /* SLDelayPerform.m */,
+				395EFDF125E4A1CB008F5ED1 /* SLDelayPerform.h */,
+				395EFDF225E4A1CB008F5ED1 /* PrefixHeader.pch */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
 		};
-		395EFC4325E3B410008F5ED1 /* SLCategory */ = {
+		395EFDF325E4A1CB008F5ED1 /* SLCategory */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC4425E3B410008F5ED1 /* UIView+SLFrame.m */,
-				395EFC4525E3B410008F5ED1 /* UIImage+SLCommon.h */,
-				395EFC4625E3B410008F5ED1 /* UIView+SLImage.h */,
-				395EFC4725E3B410008F5ED1 /* UIView+SLFrame.h */,
-				395EFC4825E3B410008F5ED1 /* UIView+SLImage.m */,
-				395EFC4925E3B410008F5ED1 /* UIImage+SLCommon.m */,
+				395EFDF425E4A1CB008F5ED1 /* UIView+SLFrame.m */,
+				395EFDF525E4A1CB008F5ED1 /* UIImage+SLCommon.h */,
+				395EFDF625E4A1CB008F5ED1 /* UIView+SLImage.h */,
+				395EFDF725E4A1CB008F5ED1 /* UIView+SLFrame.h */,
+				395EFDF825E4A1CB008F5ED1 /* UIView+SLImage.m */,
+				395EFDF925E4A1CB008F5ED1 /* UIImage+SLCommon.m */,
 			);
 			path = SLCategory;
 			sourceTree = "<group>";
 		};
-		395EFC4A25E3B410008F5ED1 /* SmallVideo */ = {
+		395EFDFA25E4A1CB008F5ED1 /* SmallVideo */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC4B25E3B410008F5ED1 /* Controller */,
-				395EFC5425E3B410008F5ED1 /* View */,
+				395EFDFB25E4A1CB008F5ED1 /* Controller */,
+				395EFE0425E4A1CB008F5ED1 /* View */,
 			);
 			path = SmallVideo;
 			sourceTree = "<group>";
 		};
-		395EFC4B25E3B410008F5ED1 /* Controller */ = {
+		395EFDFB25E4A1CB008F5ED1 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC4C25E3B410008F5ED1 /* SLEditImageController.h */,
-				395EFC4D25E3B410008F5ED1 /* SLImageClipController.m */,
-				395EFC4E25E3B410008F5ED1 /* SLShotViewController.h */,
-				395EFC4F25E3B410008F5ED1 /* SLEditVideoController.m */,
-				395EFC5025E3B410008F5ED1 /* SLEditImageController.m */,
-				395EFC5125E3B410008F5ED1 /* SLImageClipController.h */,
-				395EFC5225E3B410008F5ED1 /* SLEditVideoController.h */,
-				395EFC5325E3B410008F5ED1 /* SLShotViewController.m */,
+				395EFDFC25E4A1CB008F5ED1 /* SLEditImageController.h */,
+				395EFDFD25E4A1CB008F5ED1 /* SLImageClipController.m */,
+				395EFDFE25E4A1CB008F5ED1 /* SLShotViewController.h */,
+				395EFDFF25E4A1CB008F5ED1 /* SLEditVideoController.m */,
+				395EFE0025E4A1CB008F5ED1 /* SLEditImageController.m */,
+				395EFE0125E4A1CB008F5ED1 /* SLImageClipController.h */,
+				395EFE0225E4A1CB008F5ED1 /* SLEditVideoController.h */,
+				395EFE0325E4A1CB008F5ED1 /* SLShotViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		395EFC5425E3B410008F5ED1 /* View */ = {
+		395EFE0425E4A1CB008F5ED1 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC5525E3B410008F5ED1 /* SLGridView.m */,
-				395EFC5625E3B410008F5ED1 /* SLEditTextView.m */,
-				395EFC5725E3B410008F5ED1 /* SLDrawView.m */,
-				395EFC5825E3B410008F5ED1 /* SLEditMenuView.m */,
-				395EFC5925E3B410008F5ED1 /* SLImageZoomView.h */,
-				395EFC5A25E3B410008F5ED1 /* SLEditSelectedBox.h */,
-				395EFC5B25E3B410008F5ED1 /* SLEditVideoClipping.h */,
-				395EFC5C25E3B410008F5ED1 /* SLShotFocusView.m */,
-				395EFC5D25E3B410008F5ED1 /* SLMosaicView.m */,
-				395EFC5E25E3B410008F5ED1 /* SLDrawView.h */,
-				395EFC5F25E3B410008F5ED1 /* SLGridView.h */,
-				395EFC6025E3B410008F5ED1 /* SLEditTextView.h */,
-				395EFC6125E3B410008F5ED1 /* SLImageZoomView.m */,
-				395EFC6225E3B410008F5ED1 /* SLEditMenuView.h */,
-				395EFC6325E3B410008F5ED1 /* SLEditVideoClipping.m */,
-				395EFC6425E3B410008F5ED1 /* SLEditSelectedBox.m */,
-				395EFC6525E3B410008F5ED1 /* SLMosaicView.h */,
-				395EFC6625E3B410008F5ED1 /* SLShotFocusView.h */,
+				395EFE0525E4A1CB008F5ED1 /* SLGridView.m */,
+				395EFE0625E4A1CB008F5ED1 /* SLEditTextView.m */,
+				395EFE0725E4A1CB008F5ED1 /* SLDrawView.m */,
+				395EFE0825E4A1CB008F5ED1 /* SLEditMenuView.m */,
+				395EFE0925E4A1CB008F5ED1 /* SLImageZoomView.h */,
+				395EFE0A25E4A1CB008F5ED1 /* SLEditSelectedBox.h */,
+				395EFE0B25E4A1CB008F5ED1 /* SLEditVideoClipping.h */,
+				395EFE0C25E4A1CB008F5ED1 /* SLShotFocusView.m */,
+				395EFE0D25E4A1CB008F5ED1 /* SLMosaicView.m */,
+				395EFE0E25E4A1CB008F5ED1 /* SLDrawView.h */,
+				395EFE0F25E4A1CB008F5ED1 /* SLGridView.h */,
+				395EFE1025E4A1CB008F5ED1 /* SLEditTextView.h */,
+				395EFE1125E4A1CB008F5ED1 /* SLImageZoomView.m */,
+				395EFE1225E4A1CB008F5ED1 /* SLEditMenuView.h */,
+				395EFE1325E4A1CB008F5ED1 /* SLEditVideoClipping.m */,
+				395EFE1425E4A1CB008F5ED1 /* SLEditSelectedBox.m */,
+				395EFE1525E4A1CB008F5ED1 /* SLMosaicView.h */,
+				395EFE1625E4A1CB008F5ED1 /* SLShotFocusView.h */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -581,7 +524,7 @@
 		900EEFF51C2BBF7600EA709B /* TZImagePickerController */ = {
 			isa = PBXGroup;
 			children = (
-				395EFC2525E3B410008F5ED1 /* PhotoEdit */,
+				395EFDD525E4A1CB008F5ED1 /* PhotoEdit */,
 				900EEFF61C2BBF9500EA709B /* TZImagePickerController.h */,
 				900EEFF71C2BBF9500EA709B /* TZImagePickerController.m */,
 				900EEFFC1C2BD58B00EA709B /* TZPhotoPickerController.h */,
@@ -660,49 +603,21 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				395EFC6C25E3B410008F5ED1 /* SLBlurView.h in Headers */,
-				395EFC8E25E3B410008F5ED1 /* UIView+SLImage.h in Headers */,
 				901CC3FA21CB757500C55443 /* TZImageRequestOperation.h in Headers */,
 				9F763A6B1FA0731E00D9E526 /* TZImagePickerController.h in Headers */,
-				395EFC8925E3B410008F5ED1 /* SLDelayPerform.h in Headers */,
-				395EFC9C25E3B410008F5ED1 /* SLImageClipController.h in Headers */,
-				395EFC7925E3B410008F5ED1 /* SLAvCaptureTool.h in Headers */,
 				9F763A6D1FA0733700D9E526 /* NSBundle+TZImagePicker.h in Headers */,
 				9F763A6C1FA0733100D9E526 /* TZAssetModel.h in Headers */,
-				395EFCA825E3B410008F5ED1 /* SLImageZoomView.h in Headers */,
-				395EFC9725E3B410008F5ED1 /* SLShotViewController.h in Headers */,
 				9F763A731FA0741D00D9E526 /* TZVideoPlayerController.h in Headers */,
-				395EFCA925E3B410008F5ED1 /* SLEditSelectedBox.h in Headers */,
 				9F763A741FA0741D00D9E526 /* TZGifPhotoPreviewController.h in Headers */,
-				395EFC8F25E3B410008F5ED1 /* UIView+SLFrame.h in Headers */,
-				395EFC8625E3B410008F5ED1 /* SLImageView.h in Headers */,
-				395EFC7425E3B410008F5ED1 /* SLAvCaptureSession.h in Headers */,
-				395EFC9D25E3B410008F5ED1 /* SLEditVideoController.h in Headers */,
-				395EFCAF25E3B410008F5ED1 /* SLDrawView.h in Headers */,
-				395EFCAA25E3B410008F5ED1 /* SLEditVideoClipping.h in Headers */,
-				395EFC8525E3B410008F5ED1 /* SLImage.h in Headers */,
 				9005E2B5257A462E002A8682 /* UIView+TZLayout.h in Headers */,
 				9F763A761FA0741D00D9E526 /* TZImageManager.h in Headers */,
-				395EFC7325E3B410008F5ED1 /* SLAvPlayer.h in Headers */,
-				395EFC7625E3B410008F5ED1 /* SLAvWriterInput.h in Headers */,
 				9F763A781FA0741D00D9E526 /* TZLocationManager.h in Headers */,
-				395EFC7E25E3B410008F5ED1 /* SLImageDecoder.h in Headers */,
 				9F763A711FA0741D00D9E526 /* TZPhotoPreviewController.h in Headers */,
-				395EFCB025E3B410008F5ED1 /* SLGridView.h in Headers */,
 				9F763A721FA0741D00D9E526 /* TZPhotoPreviewCell.h in Headers */,
-				395EFCB925E3B410008F5ED1 /* SLMosaicView.h in Headers */,
-				395EFC8D25E3B410008F5ED1 /* UIImage+SLCommon.h in Headers */,
 				9F763A701FA0741D00D9E526 /* TZAssetCell.h in Headers */,
-				395EFC6725E3B410008F5ED1 /* SLPaddingLabel.h in Headers */,
-				395EFC7525E3B410008F5ED1 /* SLAvEditExport.h in Headers */,
 				9F763A6F1FA0741D00D9E526 /* TZPhotoPickerController.h in Headers */,
-				395EFCB125E3B410008F5ED1 /* SLEditTextView.h in Headers */,
-				395EFC9425E3B410008F5ED1 /* SLEditImageController.h in Headers */,
 				9F763A751FA0741D00D9E526 /* TZProgressView.h in Headers */,
-				395EFCB425E3B410008F5ED1 /* SLEditMenuView.h in Headers */,
 				9F763A771FA0741D00D9E526 /* TZImageCropManager.h in Headers */,
-				395EFCBA25E3B410008F5ED1 /* SLShotFocusView.h in Headers */,
-				395EFC8A25E3B410008F5ED1 /* PrefixHeader.pch in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -880,54 +795,54 @@
 			buildActionMask = 2147483647;
 			files = (
 				9038D5911C3974F0007DE549 /* TZTestCell.m in Sources */,
-				395EFC7F25E3B410008F5ED1 /* SLImageView.m in Sources */,
-				395EFC9525E3B410008F5ED1 /* SLImageClipController.m in Sources */,
+				395EFE1F25E4A1CB008F5ED1 /* SLImageView.m in Sources */,
+				395EFE2625E4A1CB008F5ED1 /* SLImageClipController.m in Sources */,
 				900EF00F1C2C0B1100EA709B /* TZAssetModel.m in Sources */,
-				395EFC9E25E3B410008F5ED1 /* SLShotViewController.m in Sources */,
+				395EFE2925E4A1CB008F5ED1 /* SLShotViewController.m in Sources */,
 				900EEFFE1C2BD58B00EA709B /* TZPhotoPickerController.m in Sources */,
 				90CE84B71C3BABB6003D0779 /* TZVideoPlayerController.m in Sources */,
 				900EF0021C2BD7E400EA709B /* TZAssetCell.m in Sources */,
-				395EFC8125E3B410008F5ED1 /* SLImage.m in Sources */,
-				395EFC9825E3B410008F5ED1 /* SLEditVideoController.m in Sources */,
+				395EFE2025E4A1CB008F5ED1 /* SLImage.m in Sources */,
+				395EFE2725E4A1CB008F5ED1 /* SLEditVideoController.m in Sources */,
 				6DD0502B1DF659ED0057C78D /* TZProgressView.m in Sources */,
-				395EFCB725E3B410008F5ED1 /* SLEditSelectedBox.m in Sources */,
-				395EFCB525E3B410008F5ED1 /* SLEditVideoClipping.m in Sources */,
-				395EFC6825E3B410008F5ED1 /* SLBlurView.m in Sources */,
+				395EFE3225E4A1CB008F5ED1 /* SLEditSelectedBox.m in Sources */,
+				395EFE3125E4A1CB008F5ED1 /* SLEditVideoClipping.m in Sources */,
+				395EFE1725E4A1CB008F5ED1 /* SLBlurView.m in Sources */,
 				6D32B9BD1CD83640005CE1E0 /* LxGridViewFlowLayout.m in Sources */,
 				6D4608311DFFC60D004FB009 /* TZGifPhotoPreviewController.m in Sources */,
-				395EFCB225E3B410008F5ED1 /* SLImageZoomView.m in Sources */,
+				395EFE3025E4A1CB008F5ED1 /* SLImageZoomView.m in Sources */,
 				900EF0161C2C134900EA709B /* TZPhotoPreviewCell.m in Sources */,
 				900E65871C2BB8D5003D9A9E /* ViewController.m in Sources */,
-				395EFC7A25E3B410008F5ED1 /* SLAvCaptureSession.m in Sources */,
-				395EFC6A25E3B410008F5ED1 /* SLPaddingLabel.m in Sources */,
-				395EFCA225E3B410008F5ED1 /* SLEditTextView.m in Sources */,
+				395EFE1D25E4A1CB008F5ED1 /* SLAvCaptureSession.m in Sources */,
+				395EFE1825E4A1CB008F5ED1 /* SLPaddingLabel.m in Sources */,
+				395EFE2B25E4A1CB008F5ED1 /* SLEditTextView.m in Sources */,
 				90CE84AE1C3A89EF003D0779 /* TZImageManager.m in Sources */,
-				395EFC8725E3B410008F5ED1 /* SLDelayPerform.m in Sources */,
+				395EFE2225E4A1CB008F5ED1 /* SLDelayPerform.m in Sources */,
 				901F2295215CABD600F604ED /* FLAnimatedImage.m in Sources */,
 				900E65841C2BB8D5003D9A9E /* AppDelegate.m in Sources */,
 				9005E2B3257A462E002A8682 /* UIView+TZLayout.m in Sources */,
 				901F2296215CABD600F604ED /* FLAnimatedImageView.m in Sources */,
 				9019FD8D21EC25D7009ADEAE /* TZImageUploadOperation.m in Sources */,
 				900E65811C2BB8D5003D9A9E /* main.m in Sources */,
-				395EFC6F25E3B410008F5ED1 /* SLAvEditExport.m in Sources */,
+				395EFE1A25E4A1CB008F5ED1 /* SLAvEditExport.m in Sources */,
 				900EF0121C2C107400EA709B /* TZPhotoPreviewController.m in Sources */,
-				395EFCA625E3B410008F5ED1 /* SLEditMenuView.m in Sources */,
-				395EFC8B25E3B410008F5ED1 /* UIView+SLFrame.m in Sources */,
-				395EFCA025E3B410008F5ED1 /* SLGridView.m in Sources */,
+				395EFE2D25E4A1CB008F5ED1 /* SLEditMenuView.m in Sources */,
+				395EFE2325E4A1CB008F5ED1 /* UIView+SLFrame.m in Sources */,
+				395EFE2A25E4A1CB008F5ED1 /* SLGridView.m in Sources */,
 				901CC3FC21CB758500C55443 /* TZImageRequestOperation.m in Sources */,
-				395EFC9225E3B410008F5ED1 /* UIImage+SLCommon.m in Sources */,
+				395EFE2525E4A1CB008F5ED1 /* UIImage+SLCommon.m in Sources */,
 				6D5358CD1D64600F00928CC6 /* NSBundle+TZImagePicker.m in Sources */,
 				900EEFF81C2BBF9500EA709B /* TZImagePickerController.m in Sources */,
-				395EFCAB25E3B410008F5ED1 /* SLShotFocusView.m in Sources */,
-				395EFC9025E3B410008F5ED1 /* UIView+SLImage.m in Sources */,
-				395EFC7125E3B410008F5ED1 /* SLAvCaptureTool.m in Sources */,
-				395EFC6D25E3B410008F5ED1 /* SLAvWriterInput.m in Sources */,
-				395EFC8325E3B410008F5ED1 /* SLImageDecoder.m in Sources */,
-				395EFCA425E3B410008F5ED1 /* SLDrawView.m in Sources */,
+				395EFE2E25E4A1CB008F5ED1 /* SLShotFocusView.m in Sources */,
+				395EFE2425E4A1CB008F5ED1 /* UIView+SLImage.m in Sources */,
+				395EFE1B25E4A1CB008F5ED1 /* SLAvCaptureTool.m in Sources */,
+				395EFE1925E4A1CB008F5ED1 /* SLAvWriterInput.m in Sources */,
+				395EFE2125E4A1CB008F5ED1 /* SLImageDecoder.m in Sources */,
+				395EFE2C25E4A1CB008F5ED1 /* SLDrawView.m in Sources */,
 				902938D81EE2D02C000F2F8F /* TZLocationManager.m in Sources */,
-				395EFC7725E3B410008F5ED1 /* SLAvPlayer.m in Sources */,
-				395EFC9A25E3B410008F5ED1 /* SLEditImageController.m in Sources */,
-				395EFCAD25E3B410008F5ED1 /* SLMosaicView.m in Sources */,
+				395EFE1C25E4A1CB008F5ED1 /* SLAvPlayer.m in Sources */,
+				395EFE2825E4A1CB008F5ED1 /* SLEditImageController.m in Sources */,
+				395EFE2F25E4A1CB008F5ED1 /* SLMosaicView.m in Sources */,
 				6DC84D0A1DF5358500A107A9 /* TZImageCropManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -953,46 +868,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				901CC3FB21CB757500C55443 /* TZImageRequestOperation.m in Sources */,
-				395EFC7B25E3B410008F5ED1 /* SLAvCaptureSession.m in Sources */,
-				395EFCAC25E3B410008F5ED1 /* SLShotFocusView.m in Sources */,
-				395EFC7825E3B410008F5ED1 /* SLAvPlayer.m in Sources */,
 				9F763A501FA072E500D9E526 /* TZImagePickerController.m in Sources */,
 				9F763A521FA072E500D9E526 /* TZPhotoPickerController.m in Sources */,
-				395EFC7025E3B410008F5ED1 /* SLAvEditExport.m in Sources */,
-				395EFC8225E3B410008F5ED1 /* SLImage.m in Sources */,
 				9F763A541FA072E500D9E526 /* TZAssetCell.m in Sources */,
 				9F763A561FA072E500D9E526 /* TZAssetModel.m in Sources */,
-				395EFC9125E3B410008F5ED1 /* UIView+SLImage.m in Sources */,
-				395EFC9325E3B410008F5ED1 /* UIImage+SLCommon.m in Sources */,
-				395EFC8425E3B410008F5ED1 /* SLImageDecoder.m in Sources */,
-				395EFC8825E3B410008F5ED1 /* SLDelayPerform.m in Sources */,
-				395EFCB325E3B410008F5ED1 /* SLImageZoomView.m in Sources */,
-				395EFCB825E3B410008F5ED1 /* SLEditSelectedBox.m in Sources */,
-				395EFC6E25E3B410008F5ED1 /* SLAvWriterInput.m in Sources */,
-				395EFCB625E3B410008F5ED1 /* SLEditVideoClipping.m in Sources */,
 				9F763A581FA072E500D9E526 /* TZPhotoPreviewController.m in Sources */,
-				395EFC6925E3B410008F5ED1 /* SLBlurView.m in Sources */,
 				9005E2B4257A462E002A8682 /* UIView+TZLayout.m in Sources */,
 				9F763A5A1FA072E500D9E526 /* TZPhotoPreviewCell.m in Sources */,
 				9F763A5C1FA072E500D9E526 /* TZVideoPlayerController.m in Sources */,
-				395EFC9F25E3B410008F5ED1 /* SLShotViewController.m in Sources */,
-				395EFC8C25E3B410008F5ED1 /* UIView+SLFrame.m in Sources */,
-				395EFC9625E3B410008F5ED1 /* SLImageClipController.m in Sources */,
-				395EFC9925E3B410008F5ED1 /* SLEditVideoController.m in Sources */,
-				395EFCA725E3B410008F5ED1 /* SLEditMenuView.m in Sources */,
-				395EFCA125E3B410008F5ED1 /* SLGridView.m in Sources */,
-				395EFC7225E3B410008F5ED1 /* SLAvCaptureTool.m in Sources */,
-				395EFCA325E3B410008F5ED1 /* SLEditTextView.m in Sources */,
 				9F763A5E1FA072E500D9E526 /* TZGifPhotoPreviewController.m in Sources */,
 				9F763A601FA072E500D9E526 /* TZProgressView.m in Sources */,
-				395EFC6B25E3B410008F5ED1 /* SLPaddingLabel.m in Sources */,
-				395EFCAE25E3B410008F5ED1 /* SLMosaicView.m in Sources */,
 				9F763A621FA072E500D9E526 /* TZImageManager.m in Sources */,
-				395EFC8025E3B410008F5ED1 /* SLImageView.m in Sources */,
-				395EFCA525E3B410008F5ED1 /* SLDrawView.m in Sources */,
 				9F763A641FA072E500D9E526 /* TZImageCropManager.m in Sources */,
 				9F763A661FA072E500D9E526 /* TZLocationManager.m in Sources */,
-				395EFC9B25E3B410008F5ED1 /* SLEditImageController.m in Sources */,
 				9F763A6A1FA072E500D9E526 /* NSBundle+TZImagePicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1164,6 +1052,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TZImagePickerController",
 					"$(PROJECT_DIR)/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
+					"$(PROJECT_DIR)/TZImagePickerController/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
 				);
 				INFOPLIST_FILE = TZImagePickerController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1189,6 +1078,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/TZImagePickerController",
 					"$(PROJECT_DIR)/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
+					"$(PROJECT_DIR)/TZImagePickerController/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
 				);
 				INFOPLIST_FILE = TZImagePickerController/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -1278,6 +1168,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
+					"$(PROJECT_DIR)/TZImagePickerController/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TZImagePickerControllerFramework/Info.plist;
@@ -1323,6 +1214,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
+					"$(PROJECT_DIR)/TZImagePickerController/TZImagePickerController/PhotoEdit/General/SLAnimateImageView",
 				);
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				INFOPLIST_FILE = TZImagePickerControllerFramework/Info.plist;
