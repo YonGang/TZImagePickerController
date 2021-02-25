@@ -46,4 +46,8 @@ typedef NS_ENUM(NSUInteger, SLEditMenuType) {
 
 @end
 
+@interface UIImage (MyBundle)
++ (UIImage *)tz_imageNamedFromMyBundle:(NSString *)name;
+@end
+
 NS_ASSUME_NONNULL_END

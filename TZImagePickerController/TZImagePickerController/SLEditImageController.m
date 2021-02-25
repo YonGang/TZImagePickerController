@@ -23,6 +23,7 @@
 #import "UIView+SLFrame.h"
 #import "SLDelayPerform.h"
 #import "PrefixHeader.pch"
+#import "NSBundle+TZImagePicker.h"
 
 @interface SLEditImageController ()<UIGestureRecognizerDelegate, SLImageZoomViewDelegate>
 
@@ -195,7 +196,7 @@
         _editBtn.center = CGPointMake(self.view.sl_w/2.0, self.view.sl_h - 80);
         _editBtn.layer.cornerRadius = _editBtn.sl_w/2.0;
         UIButton * btn = [[UIButton alloc] initWithFrame:_editBtn.bounds];
-        [btn setImage:[UIImage imageNamed:@"edit"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage tz_imageNamedFromMyBundle:@"edit"] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(editBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
         [_editBtn addSubview:btn];
     }
@@ -207,7 +208,7 @@
         _againShotBtn.center = CGPointMake((self.view.sl_w/2 - 70/2.0)/2.0, self.view.sl_h - 80);
         _againShotBtn.layer.cornerRadius = _againShotBtn.sl_w/2.0;
         UIButton * btn = [[UIButton alloc] initWithFrame:_againShotBtn.bounds];
-        [btn setImage:[UIImage imageNamed:@"cancle"] forState:UIControlStateNormal];
+        [btn setImage:[UIImage tz_imageNamedFromMyBundle:@"cancle"] forState:UIControlStateNormal];
         [btn addTarget:self action:@selector(againShotBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
         [_againShotBtn addSubview:btn];
     }
@@ -219,7 +220,7 @@
         _saveAlbumBtn.center = CGPointMake(self.view.sl_w/2.0 + 70/2.0+ (self.view.sl_w/2 - 70/2.0)/2.0, self.view.sl_h - 80);
         _saveAlbumBtn.layer.cornerRadius = _saveAlbumBtn.sl_w/2.0;
         _saveAlbumBtn.backgroundColor = [UIColor whiteColor];
-        [_saveAlbumBtn setImage:[UIImage imageNamed:@"save"] forState:UIControlStateNormal];
+        [_saveAlbumBtn setImage:[UIImage tz_imageNamedFromMyBundle:@"save"] forState:UIControlStateNormal];
         [_saveAlbumBtn addTarget:self action:@selector(saveAlbumBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _saveAlbumBtn;
@@ -243,7 +244,7 @@
         _doneEditBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.sl_w - 50 - 15, isIphoneX?54:30, 40, 30)];
         _doneEditBtn.hidden = YES;
         _doneEditBtn.backgroundColor = [UIColor colorWithRed:45/255.0 green:175/255.0 blue:45/255.0 alpha:1];
-        [_doneEditBtn setTitle:@"发送" forState:UIControlStateNormal];
+        [_doneEditBtn setTitle:@"完成" forState:UIControlStateNormal];
         [_doneEditBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         _doneEditBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         _doneEditBtn.layer.cornerRadius = 4;
@@ -311,7 +312,7 @@
                 if ([setting[@"hidden"] boolValue]) weakSelf.editingMenuType = SLEditMenuTypeUnknown;
                 editTextView.editTextCompleted = ^(UILabel * _Nullable label) {
                     
-                    [weakSelf.doneEditBtn setTitle:@"发送" forState:UIControlStateNormal];
+                    [weakSelf.doneEditBtn setTitle:@"完成" forState:UIControlStateNormal];
                     if (label.text.length == 0 || label == nil) {
                         return;
                     }
@@ -671,6 +672,24 @@
     self.drawView.lineWidth = 5.0/self.zoomView.zoomScale;
     self.mosaicView.squareWidth = 15/self.zoomView.zoomScale;
     self.mosaicView.paintSize = CGSizeMake(40/self.zoomView.zoomScale, 40/self.zoomView.zoomScale);
+}
+
+
+@end
+
+@implementation UIImage (MyBundle)
+
++ (UIImage *)tz_imageNamedFromMyBundle:(NSString *)name {
+    NSBundle *imageBundle = [NSBundle tz_imagePickerBundle];
+    name = [name stringByAppendingString:@"@2x"];
+    NSString *imagePath = [imageBundle pathForResource:name ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+    if (!image) {
+        // 兼容业务方自己设置图片的方式
+        name = [name stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
+        image = [UIImage imageNamed:name];
+    }
+    return image;
 }
 
 @end

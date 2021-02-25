@@ -10,6 +10,7 @@
 #import "SLImageView.h"
 #import "SLImage.h"
 #import "PrefixHeader.pch"
+#import "NSBundle+TZImagePicker.h"
 
 /// 涂鸦子菜单 画笔颜色选择
 @interface SLSubmenuGraffitiView : UIView
@@ -54,7 +55,7 @@
         [self addSubview:colorBtn];
         if (i == count - 1) {
             [colorBtn addTarget:self action:@selector(backToPreviousStep:) forControlEvents:UIControlEventTouchUpInside];
-            [colorBtn setImage:[UIImage imageNamed:@"EditMenuGraffitiBack"] forState:UIControlStateNormal];
+            [colorBtn setImage:[UIImage tz_imageNamedFromMyBundle:@"EditMenuGraffitiBack"] forState:UIControlStateNormal];
         }else {
             [colorBtn addTarget:self action:@selector(colorBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
             colorBtn.layer.cornerRadius = itemSize.width/2.0;
@@ -235,8 +236,8 @@
         if(i == _currentTypeIndex) {
             colorBtn.selected = YES;
         }
-        [colorBtn setBackgroundImage:[UIImage imageNamed:imageNames[i]] forState:UIControlStateNormal];
-        [colorBtn setBackgroundImage:[UIImage imageNamed:imageNamesSelected[i]] forState:UIControlStateSelected];
+        [colorBtn setBackgroundImage:[UIImage tz_imageNamedFromMyBundle:imageNames[i]] forState:UIControlStateNormal];
+        [colorBtn setBackgroundImage:[UIImage tz_imageNamedFromMyBundle:imageNamesSelected[i]] forState:UIControlStateSelected];
     }
     UIView *line = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 1, self.frame.size.width, 0.5)];
     line.backgroundColor = [UIColor whiteColor];
@@ -291,8 +292,8 @@
     for (int i = 0; i < count; i++) {
         UIButton * menuBtn = [[UIButton alloc] initWithFrame:CGRectMake(space/2.0 + (itemSize.width + space)*i, self.frame.size.height - 50, itemSize.width, 20)];
         menuBtn.tag = [_menuTypes[i] intValue];
-        [menuBtn setBackgroundImage:[UIImage imageNamed:_imageNames[i]] forState:UIControlStateNormal];
-        [menuBtn setBackgroundImage:[UIImage imageNamed:_imageNamesSelected[i]] forState:UIControlStateSelected];
+        [menuBtn setBackgroundImage:[UIImage tz_imageNamedFromMyBundle:_imageNames[i]] forState:UIControlStateNormal];
+        [menuBtn setBackgroundImage:[UIImage tz_imageNamedFromMyBundle:_imageNamesSelected[i]] forState:UIControlStateSelected];
         [menuBtn addTarget:self action:@selector(menuBtnClicked:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:menuBtn];
         [_menuBtns addObject:menuBtn];
@@ -431,4 +432,19 @@
 }
 @end
 
+@implementation UIImage (MyBundle)
 
++ (UIImage *)tz_imageNamedFromMyBundle:(NSString *)name {
+    NSBundle *imageBundle = [NSBundle tz_imagePickerBundle];
+    name = [name stringByAppendingString:@"@2x"];
+    NSString *imagePath = [imageBundle pathForResource:name ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+    if (!image) {
+        // 兼容业务方自己设置图片的方式
+        name = [name stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
+        image = [UIImage imageNamed:name];
+    }
+    return image;
+}
+
+@end

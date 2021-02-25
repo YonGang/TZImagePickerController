@@ -22,4 +22,7 @@ typedef NS_ENUM(NSInteger)
 @property (nonatomic, assign) DoneType type;
 @end
 
+@interface UIImage (MyBundle)
++ (UIImage *)tz_imageNamedFromMyBundle:(NSString *)name;
+@end
 NS_ASSUME_NONNULL_END

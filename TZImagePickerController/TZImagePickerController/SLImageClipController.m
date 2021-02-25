@@ -13,6 +13,7 @@
 #import "UIView+SLFrame.h"
 #import "SLDelayPerform.h"
 #import "PrefixHeader.pch"
+#import "NSBundle+TZImagePicker.h"
 
 #define KBottomMenuHeight 100  //底部菜单高度
 #define KGridTopMargin 40  //顶部间距
@@ -118,7 +119,7 @@
 - (UIButton *)cancleClipBtn {
     if (_cancleClipBtn == nil) {
         _cancleClipBtn = [[UIButton alloc] initWithFrame:CGRectMake(30, self.view.sl_h - 30 - 20, 40, 30)];
-        [_cancleClipBtn setImage:[UIImage imageNamed:@"EditImageClipCancel"] forState:UIControlStateNormal];
+        [_cancleClipBtn setImage:[UIImage tz_imageNamedFromMyBundle:@"EditImageClipCancel"] forState:UIControlStateNormal];
         _cancleClipBtn.titleLabel.font = [UIFont systemFontOfSize:14];
         [_cancleClipBtn addTarget:self action:@selector(cancleClipClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -139,7 +140,7 @@
 - (UIButton *)doneClipBtn {
     if (_doneClipBtn == nil) {
         _doneClipBtn = [[UIButton alloc] initWithFrame:CGRectMake(self.view.sl_w - 30 - 40, self.view.sl_h - 30 - 20, 40, 30)];
-        [_doneClipBtn setImage:[UIImage imageNamed:@"EditImageClipDone"] forState:UIControlStateNormal];
+        [_doneClipBtn setImage:[UIImage tz_imageNamedFromMyBundle:@"EditImageClipDone"] forState:UIControlStateNormal];
         [_doneClipBtn addTarget:self action:@selector(doneClipClicked:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _doneClipBtn;
@@ -347,3 +348,20 @@
 }
 
 @end
+
+@implementation UIImage (MyBundle)
+
++ (UIImage *)tz_imageNamedFromMyBundle:(NSString *)name {
+    NSBundle *imageBundle = [NSBundle tz_imagePickerBundle];
+    name = [name stringByAppendingString:@"@2x"];
+    NSString *imagePath = [imageBundle pathForResource:name ofType:@"png"];
+    UIImage *image = [UIImage imageWithContentsOfFile:imagePath];
+    if (!image) {
+        // 兼容业务方自己设置图片的方式
+        name = [name stringByReplacingOccurrencesOfString:@"@2x" withString:@""];
+        image = [UIImage imageNamed:name];
+    }
+    return image;
+}
+@end
+

@@ -13,5 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface SLImageClipController : UIViewController
 @property (nonatomic, strong) UIImage *image;
 @end
-
+@interface UIImage (MyBundle)
++ (UIImage *)tz_imageNamedFromMyBundle:(NSString *)name;
+@end
 NS_ASSUME_NONNULL_END
